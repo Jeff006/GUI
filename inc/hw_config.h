@@ -37,18 +37,9 @@
    
 
 /* Includes ------------------------------------------------------------------*/
-#if defined(STM32F2XX)
-#include "stm32f2xx.h"
-#elif defined(STM32L1XX_MD)
-#include "stm32l1xx.h"   
-#else/* Suppose F1 Series */
-#include "stm32f10x.h"
-#endif 
+#include "stm32f4xx.h"
+
    
-#if USE_STM322xG_EVAL
-   #include "stm32_eval.h"
-   #include "stm322xg_eval_ioe.h"
-#endif  
 #include <stdio.h>
 #include "TscHal.h"
 #include "JoyHal.h"
