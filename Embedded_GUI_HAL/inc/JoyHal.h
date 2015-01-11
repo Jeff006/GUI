@@ -31,6 +31,7 @@
 #endif
 
 /* Includes --------------------------------------------------------------------*/
+#include <stm32f4xx_gpio.h>
 #include "stm32HAL.h"
 
 /** @addtogroup Embedded_GUI_Library

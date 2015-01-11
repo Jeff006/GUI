@@ -1,29 +1,80 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc 4.8.3 arm-none-eabi -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -IF:\Jeff\Dev\GUI\inc -IF:\Jeff\Dev\GUI\Embedded_GUI_HAL\inc -IF:\Jeff\Dev\GUI -IF:\Jeff\Dev\GUI\cmsis -IF:\Jeff\Dev -IF:\Jeff\Dev\GUI\Embedded_GUI_HAL -IF:\Jeff\Dev\GUI\cmsis_boot -IF:\Jeff\Dev\GUI\Embedded_GUI_Library\inc -IF:\Jeff\Dev\GUI\cmsis_lib\include -IF:\Jeff\Dev\GUI\Embedded_GUI_Library -IF:\Jeff\Dev\GUI\cmsis_lib">
-      <target file="stm32f4xx_rcc.o" lastModified="14ad9cdcf7f">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14ad9c8012f"/>
+   <processor signature="arm-none-eabi-gcc 4.8.3 arm-none-eabi -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DGL_LCD_BASE -DUSE_STM32F4_DISCO -IF:\Jeff\Dev\GUI\inc -IF:\Jeff\Dev\GUI\Embedded_GUI_HAL\inc -IF:\Jeff\Dev\GUI -IF:\Jeff\Dev\GUI\cmsis -IF:\Jeff\Dev -IF:\Jeff\Dev\GUI\Embedded_GUI_HAL -IF:\Jeff\Dev\GUI\cmsis_boot -IF:\Jeff\Dev\GUI\Embedded_GUI_Library\inc -IF:\Jeff\Dev\GUI\cmsis_lib\include -IF:\Jeff\Dev\GUI\Embedded_GUI_Library -IF:\Jeff\Dev\GUI\cmsis_lib">
+      <target file="touchscreen.o" lastModified="14ada200830">
+         <source file="..\..\..\Embedded_GUI_HAL\src\touchscreen.c" lastModified="131241c0790"/>
       </target>
-      <target file="misc.o" lastModified="14ad9cdd7db">
-         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="14ad9c80107"/>
+      <target file="stm32f4xx_exti.o" lastModified="14ada1f6375">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="14ad9d9e4e8"/>
       </target>
-      <target file="system_stm32f4xx.o" lastModified="14ad9cdd5ab">
-         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14ad9c800bf"/>
-      </target>
-      <target file="stm32f4xx_flash.o" lastModified="14ad9cdd4a1">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="14ad9c93fe6"/>
-      </target>
-      <target file="stm32f4xx_gpio.o" lastModified="14ad9cdd357">
+      <target file="stm32f4xx_gpio.o" lastModified="14ada1f5bb5">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="14ad9c80124"/>
       </target>
-      <target file="gl_fonts.o" lastModified="14ad9cdd6d4">
+      <target file="menu.o" lastModified="14ada201d20">
+         <source file="..\..\..\src\menu.c" lastModified="14ad9c93ff3"/>
+      </target>
+      <target file="fonts.o" lastModified="14ada1f5404">
+         <source file="..\..\..\src\fonts.c" lastModified="13c0d7c5e80"/>
+      </target>
+      <target file="stm32f4xx_flash.o" lastModified="14ada1f5d4b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_flash.c" lastModified="14ad9c93fe6"/>
+      </target>
+      <target file="stm32f4_discovery_lcd.o" lastModified="14ada2004a6">
+         <source file="..\..\..\src\stm32f4_discovery_lcd.c" lastModified="14ada1cf057"/>
+      </target>
+      <target file="stm32f4xx_sdio.o" lastModified="14ada1f3320">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_sdio.c" lastModified="14ad9ed30d3"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="14ada1f2fe1">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="14ad9e67ada"/>
+      </target>
+      <target file="images.o" lastModified="14ada1f429f">
+         <source file="..\..\..\Embedded_GUI_Library\src\images.c" lastModified="131241c0790"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="14ada1f437a">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14ad9c800b1"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="14ada1f5e93">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="14ad9c800bf"/>
+      </target>
+      <target file="stm32f4_discovery.o" lastModified="14ada1f46e5">
+         <source file="..\..\..\src\stm32f4_discovery.c" lastModified="13c0d7c5e80"/>
+      </target>
+      <target file="misc.o" lastModified="14ada1f647f">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="14ad9c80107"/>
+      </target>
+      <target file="stm32f4xx_dma.o" lastModified="14ada1f5fdc">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma.c" lastModified="14ad9eacbba"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="14ada1f6133">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="14ad9d8e0f7"/>
+      </target>
+      <target file="TscHal.o" lastModified="14ada1f6683">
+         <source file="..\..\..\Embedded_GUI_HAL\src\TscHal.c" lastModified="131241c0790"/>
+      </target>
+      <target file="JoyHal.o" lastModified="14ada1f39f4">
+         <source file="..\..\..\Embedded_GUI_HAL\src\JoyHal.c" lastModified="14ad9e070f3"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="14ada1f4b0b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="14ad9c8012f"/>
+      </target>
+      <target file="gl_fonts.o" lastModified="14ada1f625c">
          <source file="..\..\..\Embedded_GUI_Library\src\gl_fonts.c" lastModified="131241c0790"/>
       </target>
-      <target file="pictures.o" lastModified="14ad9cdc8d8">
+      <target file="cursor.o" lastModified="14ada2011a6">
+         <source file="..\..\..\Embedded_GUI_Library\src\cursor.c" lastModified="131241c0790"/>
+      </target>
+      <target file="LcdHal.o" lastModified="14ada200a34">
+         <source file="..\..\..\Embedded_GUI_HAL\src\LcdHal.c" lastModified="14ada1bb8e6"/>
+      </target>
+      <target file="stm32f4xx_fsmc.o" lastModified="14ada1f558b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_fsmc.c" lastModified="14ad9ecef01"/>
+      </target>
+      <target file="pictures.o" lastModified="14ada1f38d8">
          <source file="..\..\..\src\pictures.c" lastModified="14ad9c93fff"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="14ad9cdcc23">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="14ad9c800b1"/>
+      <target file="stm32f4xx_usart.o" lastModified="14ada1f3b4c">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_usart.c" lastModified="14ad9ea2abd"/>
       </target>
    </processor>
 </history>

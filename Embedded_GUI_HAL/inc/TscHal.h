@@ -31,6 +31,11 @@
 #endif
 
 /* Includes --------------------------------------------------------------------*/
+#include <misc.h>
+#include <stm32f4xx_gpio.h>
+#include <stm32f4xx_spi.h>
+#include <stm32f4xx_flash.h>
+#include <stm32f4xx_exti.h>
 #include "stm32HAL.h"
 #include "graphicObjectTypes.h"
 

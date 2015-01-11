@@ -33,7 +33,7 @@
 #elif defined(STM32L1XX_MD)
 #include "stm32l1xx.h"   
 #else/* Suppose F1 Series */
-#include "stm32f10x.h"
+#include "stm32f4xx.h"
 #endif 
 
 

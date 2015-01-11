@@ -58,6 +58,11 @@ typedef struct
 
 #define GL_LCD                ((__IO GL_LCD_TypeDef *) GL_LCD_BASE)
 #define RCC_AHBPeriph_FSMC    ((uint32_t)0x00000100)
+//Add by JFLG
+#define Horizontal          LCD_DIR_HORIZONTAL
+#define Vertical            LCD_DIR_VERTICAL
+#define R3 SSD2119_ENTRY_MODE_REG
+#define R34 LCD_BASE_Data
 /* Private macros ------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* WARNING: If LcdHal functions are used by more Graphic Applications, remember that the
